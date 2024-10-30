@@ -26,7 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![screen 1](https://github.com/G-Gakii/calculator/blob/main/public/screenshot/Screenshot%202024-10-30%20at%2011.49.30.png)
+
+![screen2](https://github.com/G-Gakii/calculator/blob/main/public/screenshot/Screenshot%202024-10-30%20at%2011.50.07.png)
+
+
+![screen3](https://github.com/G-Gakii/calculator/blob/main/public/screenshot/Screenshot%202024-10-30%20at%2011.50.20.png)
 
 ### Links
 
