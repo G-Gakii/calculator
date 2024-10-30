@@ -1,11 +1,47 @@
-<div class="container">
-  <div class="title">
-    <h1>calc</h1>
-    <div class="theme">
-      <h2>theme</h2>
-      <div class="outer">
-        <div class="inner"></div>
+<div
+  class="allover_container"
+  [ngClass]="{
+    position2: position === 2,
+    position3: position === 3
+  }"
+>
+  <div
+    class="container"
+    [ngClass]="{
+      position2: position === 2,
+      position3: position === 3
+    }"
+  >
+    <div class="title">
+      <h1>calc</h1>
+      <div class="theme">
+        <div class="toogle">
+          <div class="mytoogle">
+            <h2>THEME</h2>
+            <div class="inner_toggle">
+              <div class="toogle_position">
+                <span (click)="positionOne()">1</span>
+                <span (click)="positionTwo()">2</span>
+                <span (click)="positionThree()">3</span>
+              </div>
+              <div
+                class="outer"
+                (click)="togglePosition()"
+                [ngClass]="{
+                  position2: position === 2,
+                  position3: position === 3
+                }"
+              >
+                <div class="inner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    @defer () {
+    <app-display></app-display>
+    <app-button></app-button>
+    }
   </div>
 </div>

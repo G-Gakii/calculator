@@ -1,0 +1,124 @@
+.button-container {
+  margin-top: 2rem;
+  background-color: var(--Verydarkdesaturatedblue5);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  &.position2 {
+    background-color: var(--Grayishred);
+    color: var(--Verydarkgrayishyellow);
+    .number {
+      button {
+        background-color: var(--Lightgrayishyellow);
+        border-bottom: 5px solid var(--Darkgrayishorange);
+      }
+      .del {
+        background-color: var(--Darkmoderatecyan);
+        border-bottom: 5px solid var(--Verydarkcyan);
+      }
+    }
+    .eval {
+      .reset {
+        background-color: var(--Darkmoderatecyan);
+        border-bottom: 5px solid var(--Verydarkcyan);
+      }
+      .eval {
+        background-color: var(--Orange);
+        border-bottom: 5px solid var(--Darkorange);
+      }
+    }
+  }
+  &.position3 {
+    background-color: var(--Verydarkviolet2);
+
+    .number {
+      button {
+        background-color: var(--Verydarkviolet3);
+        color: var(--Lightyellow);
+        border: none;
+        border-bottom: 5px solid var(--Darkmagenta);
+      }
+      .del {
+        background-color: var(--Darkviolet);
+        color: var(--White);
+      }
+    }
+    .eval {
+      .reset {
+        background-color: var(--Darkviolet);
+        border-bottom: 5px solid var(--Darkmagenta);
+      }
+      .eval {
+        background-color: var(--Purecyan);
+        border-bottom: 5px solid var(--Softcyan);
+        color: black;
+      }
+    }
+  }
+
+  .number {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    button {
+      width: 90%;
+      min-height: 3rem;
+      padding: 1rem;
+
+      text-align: center;
+      margin-top: 1rem;
+      margin-right: 1rem;
+      font-size: 2rem;
+      border-radius: 0.5rem;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      color: var(--Verydarkgrayishblue);
+      background-color: var(--Lightgrayishorange);
+      border-bottom: 5px solid var(--Grayishorange);
+    }
+    .del {
+      background-color: var(--Desaturateddarkblue1);
+      color: var(--White);
+      border: none;
+      border-bottom: 5px solid var(--Desaturateddarkblue2);
+    }
+  }
+  .eval {
+    margin-top: 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    color: var(--White);
+    align-items: center;
+    button {
+      width: 95%;
+      align-items: center;
+      padding: 1rem;
+      text-align: center;
+      font-size: 2rem;
+
+      border-radius: 0.5rem;
+      outline: none;
+      cursor: pointer;
+      text-align: center;
+    }
+    .reset {
+      background-color: var(--Desaturateddarkblue1);
+      color: var(--White);
+      border: none;
+      height: 100%;
+      border-bottom: 5px solid var(--Desaturateddarkblue2);
+    }
+    .eval {
+      background-color: var(--Red);
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      height: 100%;
+      border-bottom: 5px solid var(--Darkred);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../../styles.css";
+.display_container {
+  background-color: var(--Verydarkdesaturatedblue6);
+
+  margin-top: 1rem;
+  border-radius: 1rem;
+  &.position2 {
+    background-color: var(--White);
+    p {
+      color: var(--Verydarkdesaturatedblue6);
+    }
+  }
+  &.position3 {
+    background-color: var(--Verydarkviolet2);
+    p {
+      color: var(--Lightyellow);
+    }
+  }
+  p {
+    padding: 3rem;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 1rem;
+    color: white;
+    font-size: 3rem;
+    text-align: end;
+  }
+}

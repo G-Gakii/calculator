@@ -1,0 +1,30 @@
+<div
+  class="button-container"
+  [ngClass]="{
+    position2: position === 2,
+    position3: position === 3
+  }"
+>
+  <div class="number">
+    <button type="button" (click)="getUserInput('7')">7</button>
+    <button type="button" (click)="getUserInput('8')">8</button>
+    <button type="button" (click)="getUserInput('9')">9</button>
+    <button type="button" class="del" (click)="Delete()">DEL</button>
+    <button type="button" (click)="getUserInput('4')">4</button>
+    <button type="button" (click)="getUserInput('5')">5</button>
+    <button type="button" (click)="getUserInput('6')">6</button>
+    <button type="button" (click)="getUserInput('+')">+</button>
+    <button type="button" (click)="getUserInput('1')">1</button>
+    <button type="button" (click)="getUserInput('2')">2</button>
+    <button type="button" (click)="getUserInput('3')">3</button>
+    <button type="button" (click)="getUserInput('-')">-</button>
+    <button type="button" (click)="getUserInput('.')">.</button>
+    <button type="button" (click)="getUserInput('0')">0</button>
+    <button type="button" (click)="getUserInput('/')">/</button>
+    <button type="button" (click)="getUserInput('*')">X</button>
+  </div>
+  <div class="eval">
+    <button type="button" class="reset" (click)="reset()">RESET</button>
+    <button type="button" class="eval" (click)="getResults()">=</button>
+  </div>
+</div>
